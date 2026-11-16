@@ -14,6 +14,22 @@ An Agent Skill for Claude that assesses whether missing knowledge would hurt a t
 
 See [`SKILL.md`](./SKILL.md) for details.
 
+## Other skills in this repository
+
+### research-harness
+
+[`research-harness/SKILL.md`](./research-harness/SKILL.md) generates a task-specific, executable research harness (methodology, evaluation framework, hypotheses, experiment/evaluation interfaces, persistent research state, iteration loop, and stopping conditions) for problems that require empirical investigation. It builds the research infrastructure; it does not conduct the research itself.
+
+Install it the same way as below, replacing the path:
+
+```sh
+mkdir -p ~/.claude/skills/research-harness
+curl -fsSL https://raw.githubusercontent.com/kt3k/preflight-research/main/research-harness/SKILL.md \
+  -o ~/.claude/skills/research-harness/SKILL.md
+```
+
+Invoke explicitly with `/research-harness <your task>`.
+
 ## Installation
 
 ### Claude Code (personal: available in all projects)
@@ -85,6 +101,8 @@ Or simply tell Claude to "use the preflight-research skill" in your prompt.
 
 ```
 .
-├── README.md   # This file
-└── SKILL.md    # The skill itself (YAML frontmatter + procedure)
+├── README.md                  # This file
+├── SKILL.md                   # preflight-research skill
+└── research-harness/
+    └── SKILL.md               # research-harness skill
 ```
