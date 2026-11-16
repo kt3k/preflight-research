@@ -1,4 +1,3 @@
-
 ---
 name: preflight-research
 description: >
@@ -157,6 +156,7 @@ Do not dump raw search results into the execution context.
 
 Use this structure:
 
+```markdown
 ## Task Context
 
 ### Goal
@@ -177,6 +177,7 @@ Use this structure:
 
 ### Remaining Unknowns
 - ...
+```
 
 Include only findings that materially affect execution.
 
