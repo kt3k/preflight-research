@@ -16,6 +16,10 @@ See [`SKILL.md`](./SKILL.md) for details.
 
 ## Other skills in this repository
 
+### preflight-research-v3.2
+
+[`preflight-research-v3.2/SKILL.md`](./preflight-research-v3.2/SKILL.md) builds on v3.1. It adds a Visual Slot Decision: each image slot is a real, generated, drawn, or placeholder image, chosen with a reason. Placeholders are a last resort, and real people are never drawn as likenesses. The rubric rewards real visuals and the agent checks its visual toolkit first. An explicit stop overrides fallback rules, and the first page is fetched before any parallel fetches. Concrete-looking specifics such as dates and budgets are not invented. Blocked gap research and the medium's basis are recorded, and companion skills for the medium are used.
+
 ### preflight-research-v3.1
 
 [`preflight-research-v3.1/SKILL.md`](./preflight-research-v3.1/SKILL.md) fixes gaps found in a test run of v3. Rounds whose pages cannot be opened are marked `blocked` instead of "no new information", fallbacks are required, and a "Format unverified" notice goes at the top of the deliverable when verification fails. It adds an explicit Medium Decision step that separates the delivery container (e.g., a file name) from the medium the audience expects (e.g., visual slides). Rubric scores carry their basis (verified or recollection-only). It defines stated defaults when no one can be asked, and how to handle unreliable inputs such as transcript speaker labels.
@@ -121,6 +125,8 @@ Or simply tell Claude to "use the preflight-research skill" in your prompt.
 │   └── SKILL.md               # preflight-research v3 (mandatory format research + format harness)
 ├── preflight-research-v3.1/
 │   └── SKILL.md               # preflight-research v3.1 (blocked rounds, medium decision, scored-basis)
+├── preflight-research-v3.2/
+│   └── SKILL.md               # preflight-research v3.2 (visual slot decision, rule precedence, no invented specifics)
 └── research-harness/
     └── SKILL.md               # research-harness skill
 ```
