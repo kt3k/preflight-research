@@ -16,6 +16,10 @@ See [`SKILL.md`](./SKILL.md) for details.
 
 ## Other skills in this repository
 
+### preflight-research-v3.1
+
+[`preflight-research-v3.1/SKILL.md`](./preflight-research-v3.1/SKILL.md) fixes gaps found in a test run of v3. Rounds whose pages cannot be opened are marked `blocked` instead of "no new information", fallbacks are required, and a "Format unverified" notice goes at the top of the deliverable when verification fails. It adds an explicit Medium Decision step that separates the delivery container (e.g., a file name) from the medium the audience expects (e.g., visual slides). Rubric scores carry their basis (verified or recollection-only). It defines stated defaults when no one can be asked, and how to handle unreliable inputs such as transcript speaker labels.
+
 ### preflight-research-v3
 
 [`preflight-research-v3/SKILL.md`](./preflight-research-v3/SKILL.md) builds on v2. For every document deliverable (proposal, report, slides, spec, plan, manual, memo), it always researches the format and structure at least once. It keeps iterating while rounds produce new information, capped at 4 rounds of up to 3 queries and 4 opened pages each. It then builds its own format harness (profile, ordered sections, conventions, anti-patterns, rubric, provenance, research log) and drafts and scores the deliverable against it.
@@ -115,6 +119,8 @@ Or simply tell Claude to "use the preflight-research skill" in your prompt.
 │   └── SKILL.md               # preflight-research v2 (proposed upgrade)
 ├── preflight-research-v3/
 │   └── SKILL.md               # preflight-research v3 (mandatory format research + format harness)
+├── preflight-research-v3.1/
+│   └── SKILL.md               # preflight-research v3.1 (blocked rounds, medium decision, scored-basis)
 └── research-harness/
     └── SKILL.md               # research-harness skill
 ```
