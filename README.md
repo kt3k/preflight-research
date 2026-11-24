@@ -16,6 +16,10 @@ See [`SKILL.md`](./SKILL.md) for details.
 
 ## Other skills in this repository
 
+### preflight-research-v3
+
+[`preflight-research-v3/SKILL.md`](./preflight-research-v3/SKILL.md) builds on v2. For every document deliverable (proposal, report, slides, spec, plan, manual, memo), it always researches the format and structure at least once. It keeps iterating while rounds produce new information, capped at 4 rounds of up to 3 queries and 4 opened pages each. It then builds its own format harness (profile, ordered sections, conventions, anti-patterns, rubric, provenance, research log) and drafts and scores the deliverable against it.
+
 ### preflight-research-v2
 
 [`preflight-research-v2/SKILL.md`](./preflight-research-v2/SKILL.md) is a proposed upgrade of `preflight-research`. It adds a fixed assumption inventory that includes the deliverable's craft and format, treats model recollection as unverified, keeps early outlines provisional until the preflight decision, checks that every acceptance criterion is backed by evidence, requires opening sources instead of citing search snippets, and gives the user a short preflight note.
@@ -109,6 +113,8 @@ Or simply tell Claude to "use the preflight-research skill" in your prompt.
 ├── SKILL.md                   # preflight-research skill
 ├── preflight-research-v2/
 │   └── SKILL.md               # preflight-research v2 (proposed upgrade)
+├── preflight-research-v3/
+│   └── SKILL.md               # preflight-research v3 (mandatory format research + format harness)
 └── research-harness/
     └── SKILL.md               # research-harness skill
 ```
