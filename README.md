@@ -16,6 +16,10 @@ See [`SKILL.md`](./SKILL.md) for details.
 
 ## Other skills in this repository
 
+### preflight-research-v2
+
+[`preflight-research-v2/SKILL.md`](./preflight-research-v2/SKILL.md) is a proposed upgrade of `preflight-research`. It adds a fixed assumption inventory that includes the deliverable's craft and format, treats model recollection as unverified, keeps early outlines provisional until the preflight decision, checks that every acceptance criterion is backed by evidence, requires opening sources instead of citing search snippets, and gives the user a short preflight note.
+
 ### research-harness
 
 [`research-harness/SKILL.md`](./research-harness/SKILL.md) generates a task-specific, executable research harness (methodology, evaluation framework, hypotheses, experiment/evaluation interfaces, persistent research state, iteration loop, and stopping conditions) for problems that require empirical investigation. It builds the research infrastructure; it does not conduct the research itself.
@@ -103,6 +107,8 @@ Or simply tell Claude to "use the preflight-research skill" in your prompt.
 .
 ├── README.md                  # This file
 ├── SKILL.md                   # preflight-research skill
+├── preflight-research-v2/
+│   └── SKILL.md               # preflight-research v2 (proposed upgrade)
 └── research-harness/
     └── SKILL.md               # research-harness skill
 ```
